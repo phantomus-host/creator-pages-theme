@@ -668,15 +668,15 @@ function lnkPushState(url) {
         portfolioCategoryTemplate = Handlebars.compile(viewTemplates['portfolio-category-template']);
         backButtonTemplate = Handlebars.compile(viewTemplates['back-button-template']);
 
-    
-        if (window.location.pathname == '/' || window.location.pathname.indexOf('/portfolio') === 0) {
+        var path = window.location.pathname;
+        if (path == '/' || path.indexOf('/portfolio') === 0) {
             displayHome();
-        } else if (window.location.pathname.indexOf('/blog') === 0) {;
+        } else if (path.indexOf('/blog') === 0 || path.indexOf('/tag') === 0) {;
             displayBlog();
         } else {
             var tags = $('.cr-single-static-content').data('cr-tags');
             if (!tags || tags.indexOf('portfolio') === -1) {
-                determinePath(window.location.pathname);
+                determinePath(path);
             } else {
                 displayCategoryFromStatic();
             }
