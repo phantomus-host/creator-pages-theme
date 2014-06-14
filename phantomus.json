@@ -11,7 +11,8 @@
         
         "home": {
             "staticPage": true,
-            "path": "/portfolio/"
+            "path": "/portfolio/",
+            "title": "Creator Pages By Phantomus",
         },
     
         "blog": {
