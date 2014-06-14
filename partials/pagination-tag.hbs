@@ -1,0 +1,12 @@
+<nav class="large-12 medium-12 small-12 columns pagination no-sp cr-pages" role="pagination">
+    {{#if prev}}
+        {{#phantomus_ifequal equal_to=1 value=prev}}
+            <a class="newer-posts cr-load-post-page sicon-er-l-cr" href="/tag/{{tagSlug}}"></a>
+        {{else}}
+            <a class="newer-posts cr-load-post-page sicon-er-l-cr" href="/tag/{{tagSlug}}/page/{{prev}}"></a>
+        {{/phantomus_ifequal}}
+    {{/if}}
+    {{#if next}}
+        <a class="older-posts cr-load-post-page sicon-er-r-cr" href="/tag/{{tagSlug}}/page/{{next}}"></a>
+    {{/if}}
+</nav>
