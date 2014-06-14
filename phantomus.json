@@ -1,0 +1,24 @@
+{
+    "paths": {
+    
+        "/": "home",
+        "/portfolio/": "home",
+        "/blog/": "blog"
+    
+    }, 
+    
+    "mapping": {
+        
+        "home": {
+            "staticPage": true,
+            "path": "/portfolio/"
+        },
+    
+        "blog": {
+            "postsPage": true,
+            "title": "Blog | Creator Pages by Phantomus"
+        }
+    
+    }
+    
+}

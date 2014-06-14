@@ -1,0 +1,39 @@
+{{! 
+
+    This file defines header (logo, name of the blog) as well as menu to the right side of the logo. 
+    Portfolio and Blog pages contain special route mapping to load appropriate sections. The rest of the 
+    pages should be static and identified by 'cr-menu-static' class to load correctly.
+    
+    Logo: if the blog title is empty, than the blog logo will be used, if available. 
+    If the blog title exists, the page will use blog logo and blog title + description. 
+    
+}}
+
+<div class="large-12 medium-12 small-12 columns cr-header no-sp">
+    <div class="large-6 medium-6 small-12 columns cr-logo no-sp">
+        {{#if @blog.description}}
+            {{#if @blog.logo}}
+                <div class="cr-header-logo" style="background-image: url({{@blog.logo}})"></div>
+                <div class="cr-header-title">{{@blog.title}}</div>
+                <div class="cr-header-desc">{{@blog.description}}</div>
+            {{else}}
+                <div class="cr-header-title-nl">{{@blog.title}}</div>
+                <div class="cr-header-desc-nl">{{@blog.description}}</div>
+            {{/if}}
+        {{else}}
+            {{#if @blog.logo}}
+                <div class="cr-default-logo-ntc" style="background-image: url({{@blog.logo}})"></div>
+            {{else}}
+                <div class="cr-header-title-nl">{{@blog.title}}</div>
+            {{/if}}
+        {{/if}} 
+    </div>
+    <div class="large-6 medium-6 small-12 columns cr-hmenu no-sp">
+        <ul class="cr-header-nav" style="padding-left: 0px">
+            <li><a href="/" class="cr-menu-portfolio">PORTFOLIO</a></li>
+            <li><a href="/blog/" class="cr-menu-blog">BLOG</a></li>
+            <li><a href="/about/" class="cr-menu-static">ABOUT</a></li>
+            <li><a href="/setup/" class="cr-menu-static">SETUP</a></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,1101 @@
+@import url(normalize.css);
+
+@font-face { 
+    font-family: 'icon-font';
+    src:url('../fonts/icon-font.eot?-mchb95');
+    src:url('../fonts/icon-font.eot?#iefix-mchb95') format('embedded-opentype'),
+        url('../fonts/icon-font.woff?-mchb95') format('woff'),
+        url('../fonts/icon-font.ttf?-mchb95') format('truetype'),
+        url('../fonts/icon-font.svg?-mchb95#icon-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="sicon-"], [class*=" sicon-"] {
+    font-family: 'icon-font';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sicon-yt-cr:before {content: "\e600";}
+.sicon-v-cr:before {content: "\e601";}
+.sicon-tw-cr:before {content: "\e602";}
+.sicon-st-cr:before {content: "\e603";}
+.sicon-rss-cr:before {content: "\e604";}
+.sicon-rd-cr:before {content: "\e605";}
+.sicon-p-cr:before {content: "\e606";}
+.sicon-m-cr:before {content: "\e607";}
+.sicon-l-cr:before {content: "\e608";}
+.sicon-in-cr:before {content: "\e609";}
+.sicon-gh-cr:before {content: "\e60a";}
+.sicon-g-cr:before {content: "\e60b";}
+.sicon-fl-cr:before {content: "\e60c";}
+.sicon-f-cr:before {content: "\e60d";}
+.sicon-er-r-cr:before {content: "\e60e";}
+.sicon-er-l-cr:before {content: "\e60f";}
+.sicon-dr-cr:before {content: "\e610";}
+
+html {
+    height: 100%;
+    max-height: 100%;
+    font-size: 100%;
+}
+
+body {
+    height: 100%;
+    max-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4em;
+    font-weight: 300;
+}
+
+
+.main-row {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.no-sp {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+::-moz-selection {
+    color: #222;
+    background: #D6EDFF;
+    text-shadow: none;
+}
+
+::selection {
+    color: #222;
+    background: #D6EDFF;
+    text-shadow: none;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h1:first-child, h2:first-child, h3:first-child,
+h4:first-child, h5:first-child, h6:first-child {
+    margin-top: 0 !important;
+}
+
+h1 {
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+    letter-spacing: -2px;
+    text-indent: -3px;
+}
+
+h2 {
+    font-size: 1.9rem;
+    line-height: 2.0rem;
+    letter-spacing: -1px;
+    text-indent: -2px;
+}
+
+h3 {
+    font-size: 1.7rem;
+    line-height: 1.8rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+h6 {
+     font-size: 1rem;
+     line-height: 1.2rem;
+}
+
+body a {
+    color: #333;
+    text-decoration: underline;
+    transition: color ease 0.3s;
+}
+
+body a:hover {
+    color: #666;
+}
+
+.night a {
+    color: #ccc;
+}
+
+.night a:hover {
+    color: #fff;
+}
+
+
+p, dl {
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+ul, ol {
+  margin-top: 1rem;
+  margin-left: 2rem;   
+    font-weight: 300;  
+}
+
+ol ol, ul ul,
+ul ol, ol ul {
+    margin: 0.4em 0;
+}
+
+dl dt {
+    float: left;
+    width: 180px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+    margin-bottom: 1em
+}
+
+dl dd {
+    margin-left: 200px;
+    margin-bottom: 1em
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 3.2em 0;
+    padding: 0;
+}
+
+.night hr {
+    border-top: 1px solid #ccc;
+}
+
+blockquote {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1.6em 0 1.6em -2.2em;
+    padding: 0 0 0 1.6em;
+    border-left: #333 0.4em solid;
+}
+
+.night blockquote {
+    border-left: #ccc 0.4em solid;
+}
+
+blockquote p {
+    margin: 0.8em 0;
+    font-style: italic;
+}
+
+blockquote small {
+    display: inline-block;
+    margin: 0.8em 0 0.8em 1.5em;
+    font-size:0.9em;
+    color: #ccc;
+}
+
+blockquote small:before { content: '\2014 \00A0'; }
+
+blockquote cite {
+    font-weight:bold;
+}
+
+blockquote cite a { font-weight: normal; }
+
+mark {
+    background-color: #333;
+    color: #ccc;
+}
+
+.night mark {
+    background-color: #ccc;
+    color: #333;
+}
+
+code, tt {
+    padding: 1px 3px;
+    font-family: Inconsolata, monospace, sans-serif;
+    font-size: 0.85em;
+    white-space: pre-wrap;
+    background: #ccc;
+    border-radius: 2px;
+    color: #333;
+}
+
+.night code, .night tt {
+    color: #ccc;
+    background: #333;
+}
+
+pre {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1.6em 0;
+    border: 1px solid #333;
+    width: 100%;
+    padding: 10px;
+    font-family: Inconsolata, monospace, sans-serif;
+    font-size: 0.9em;
+    white-space: pre;
+    overflow: auto;
+    background: #ccc;
+    border-radius: 3px;
+    color: #333;
+    font-weight: 300;
+}
+
+.night pre {
+    color: #ccc;
+    background: #333;
+    border: 1px solid #ccc;
+}
+
+pre code, tt {
+    font-size: inherit;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+kbd {
+    display: inline-block;
+    margin-bottom: 0.4em;
+    padding: 1px 8px;
+    border: 1px solid #333;
+    color: #333;
+    text-shadow: #fff 0 1px 0;
+    font-size: 0.9em;
+    font-weight: bold;
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.night kbd {
+    background: #333;
+    border: 1px solid #ccc;
+    color: #ccc;
+}
+
+table {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1.6em 0;
+    width:100%;
+    max-width: 100%;
+    background-color: transparent;
+}
+
+table th,
+table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #333;
+}
+
+.night table th,
+.night table td {
+    border-top: 1px solid #ccc;
+}
+
+table th { color: #333; }
+.night table th { color: #ccc; }
+
+table caption + thead tr:first-child th,
+table caption + thead tr:first-child td,
+table colgroup + thead tr:first-child th,
+table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+    border-top: 0;
+}
+
+table tbody + tbody { border-top: 2px solid #333; }
+table table table { background-color: #ccc; }
+
+.night table tbody + tbody { border-top: 2px solid #ccc; }
+.night table table { background-color: #333; }
+
+table tbody > tr:nth-child(odd) > td,
+table tbody > tr:nth-child(odd) > th {
+    background-color: #333;
+    color: #ccc;
+}
+
+.night table tbody > tr:nth-child(odd) > td,
+.night tbody > tr:nth-child(odd) > th {
+    background-color: #ccc;
+    color: #333;
+}
+
+table.plain tbody > tr:nth-child(odd) > td,
+table.plain tbody > tr:nth-child(odd) > th {
+   background: transparent;
+}
+
+iframe, .fluid-width-video-wrapper {
+    display: block;
+    margin: 1.6rem 0;
+}
+
+iframe {
+    max-height: 400px;
+}
+
+/* When a video is inside the fitvids wrapper, drop the
+margin on the iframe, cause it breaks stuff. */
+.fluid-width-video-wrapper iframe {
+    margin: 0;
+}
+
+
+.o {
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.w {
+    height: 100%;
+    width: 100%;
+    display: table;
+    margin: 0 auto;
+}
+
+.c {
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   3. Utilities - These things get used a lot
+   ========================================================================== */
+
+/* Hides shit */
+.hidden {
+    text-indent: -9999px;
+    visibility: hidden;
+    display: none;
+}
+
+/* Creates a responsive wrapper that makes our content scale nicely */
+.inner {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Centres vertically yo. (IE8+) */
+.vertical {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* ==========================================================================
+   4. General - The main styles for the the theme
+   ========================================================================== */
+
+.blog-logo {
+    text-decoration: none;
+}
+
+.blog-logo img {
+    display: block;
+    max-height: 100px;
+    width: auto;
+    margin: 0 auto;
+    line-height: 0;
+}
+
+.blog-title {
+    margin: 10px 0 10px 0;
+    font-size: 5rem;
+    letter-spacing: -1px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.blog-description {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.5em;
+    font-weight: 300;
+    font-family: 'Roboto', serif;
+    letter-spacing: 0;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+/* Every post, on every page, gets this style on its <article> tag */
+.post {
+    position: relative;
+    margin-bottom: 3rem;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+.post-title {
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+}
+
+.post-title a {
+    text-decoration: none;
+}
+
+.post-excerpt p {
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+
+.post-meta {
+    display: inline-block;
+    margin: 0 0 5px 0;
+    font-size: 0.75rem;
+    display: block;
+}
+
+.post-meta a {
+    color: #9EABB3;
+    text-decoration: none;
+}
+
+.post-meta a:hover {
+    text-decoration: underline;
+}
+
+.user-meta {
+    position: relative;
+    padding: 0.3rem 40px 0 100px;
+    min-height: 77px;
+}
+
+.user-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.user-name {
+    display: block;
+    font-weight: bold;
+}
+
+.user-bio {
+    display: block;
+    max-width: 440px;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+}
+
+.publish-meta {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4.3rem 0 4rem 0;
+    text-align: right;
+}
+
+.publish-heading {
+    display: block;
+    font-weight: bold;
+}
+
+.publish-date {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+}
+
+
+/* ==========================================================================
+   5. Single Post - When you click on an individual post
+   ========================================================================== */
+
+/* Tweak the .post wrapper style */
+.post-template .post {
+    margin-top: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Insert some mad padding up in the header for better spacing */
+.post-header {
+    margin-bottom: 1rem;
+}
+
+.post-template .blog-title {
+    display: inline-block;
+    padding: 2.5rem 0;
+}
+
+/* Keep large images within the bounds of the post-width */
+.post-content img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+/* The author credit area after the post */
+.post-footer {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.post-footer h4 {
+    font-size: 1.0rem;
+    font-weight: normal;
+}
+
+.post-footer p {
+   font-size: 0.8rem;
+    line-height: 1.3em;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Create some space to the right for the share links */
+.post-footer .author {
+    margin-top: 0px;
+    margin-left: 130px;
+}
+
+.post-footer .author .uimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100%;
+    border: 1px solid #333;
+}
+
+.night .post-footer .author .uimg {
+    border: 1px solid #ccc;
+}
+
+.cr-share {
+}
+
+.cr-share a {
+    text-decoration: none;
+    margin-left: 8px;
+    font-size: 1.6rem;
+    color: rgb(153,153,153);
+}
+
+.footer-right {
+    text-align: right;
+    padding-top: 8px;
+}
+
+
+/* ==========================================================================
+   6. Third Party Elements - Embeds from other services
+   ========================================================================== */
+
+/* Github */
+
+.gist table {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.gist .line-number {
+    min-width: 25px;
+    font-size: 1.1rem;
+}
+
+
+/* ==========================================================================
+   7. Pagination - Tools to let you flick between pages
+   ========================================================================== */
+
+/* The main wrapper for our pagination links */
+.pagination {
+    font-size: 1rem;
+    text-align: right;
+    font-weight: normal;
+}
+
+
+/* Push the previous/next links out to the left/right */
+.older-posts,
+.newer-posts {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.page-number {
+    display: inline-block;
+    padding: 2px 0;
+}
+
+
+/* ==========================================================================
+   8. Footer - The bottom of every page
+   ========================================================================== */
+
+.cr-footer {
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+    border-top: 1px solid;
+    padding-bottom: 20px;
+}
+
+.cr-fp {
+    padding-top: 20px;
+}
+
+.cr-tr {
+    text-align: right;
+}
+
+.poweredby .icon-ghost {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.poweredby .icon-ghost:hover {
+    text-decoration: none;
+}
+
+.poweredby .icon-ghost:before {
+    font-size: 1rem;
+    margin-right: 0.2em;
+}
+
+/* The subscribe icon on the footer */
+.subscribe {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    margin-left: -15px;
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+
+
+/****** CREATE THEME STYLES ******/
+
+.cr-load-ind {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}       
+
+.header-row {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cr-header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid;
+}
+
+.cr-logo {
+    text-transform: uppercase;
+    height: 50px;
+}
+
+.cr-default-logo-nt {
+    background: url(icons/default/default_logo_no_title_275x50.png) no-repeat;
+    width: 275px;
+    height: 50px;
+    background-size: 275px 50px;
+    display: block;
+}
+
+.cr-default-logo-ntc {
+    max-width: 275px;
+    max-height: 50px;
+    display: block;
+    height: 50px;
+    background-color: 275px 50px;
+}
+
+.cr-header-logo {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cr-header-title {
+    margin-left: 60px;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 1.6rem;
+}
+
+.cr-header-desc {
+    margin-left: 60px;
+    position: absolute;
+    bottom: -4px;
+}
+
+
+.cr-header-title-nl {
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 1.6rem;
+}
+
+.cr-header-desc-nl {
+    position: absolute;
+    bottom: -4px;
+}
+
+.cr-hmenu {
+    text-align: right;
+}
+
+.cr-header-nav {
+  display: inline-block;
+  margin: 0;
+  list-style-type: none;
+  list-style-position: inside;
+  padding-top: 14px;
+}
+
+.cr-header-nav li {
+    font-size: 0.8rem; 
+    display: inline-block;
+    margin-left: 10px;
+    letter-spacing: 4px;
+}
+
+.cr-header-nav li:before {
+    width: 5px;
+    height: 5px;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cr-header-nav li a:not(.button) {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.cr-lt {
+    width: 5px;
+    height: 5px;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+.cr-lb {
+    width: 5px;
+    height: 5px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+}
+
+.cr-rt {
+    width: 5px;
+    height: 5px;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.cr-rb {
+    width: 5px;
+    height: 5px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+
+.cr-pside-pad {
+    padding-left: 0 !important;
+}
+
+.cr-portfolio-row {
+    margin-bottom: 0.9375rem;
+}
+
+.cr-portfolio-entry {
+    height: 185px;
+    display: block;
+    cursor: pointer;
+}
+
+.cr-portfolio-load {
+    text-align: center;
+    margin-top: 92px;
+}
+
+.cr-p-load-fail {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+}
+
+.cr-p-image {
+    height: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.cr-cat-name {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    color: rgb(230,230,230);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    display: none;
+    text-align: center;
+}
+
+.cr-cat-name-t {
+    padding: 5px;
+}
+
+.cr-portfolio-row .cr-portfolio-entry:last-child {
+    padding-right: 0 !important;
+}
+
+.cr-pages {
+    padding: 2rem;
+    text-align: right;
+}
+
+.cr-pages a { 
+    font-size: 1.6rem;
+    color: rgb(153,153,153);
+}
+
+/****** portfolio page  ******/
+
+.cr-portfolio-list {
+    display: block;
+}
+
+.cr-portfolio-image {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.cr-portfolio-iframe {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    max-height: 400px;
+}
+
+.cr-button-c {
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+}
+
+.cr-button-c-post {
+    display: inline-block;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.cr-bc {
+    display: block;
+    padding: 5px 15px 5px 15px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.cr-bc a {
+    display: inline-block;
+    text-decoration: none;
+}
+    
+
+/**** blog page ****/
+
+.cr-head-meta {
+    font-size: 0.9rem;
+}
+
+.cr-author {
+    font-size: 0.8rem;
+    color: rgb(179,179,179);
+}
+
+
+
+
+@media only screen {
+    .medium-only-bottom-pad {margin-bottom: 0;}
+    .small-no-right-pad {
+        padding-right: 0 !important;
+    }
+    
+    .medium-small-bottom-pad {
+        margin-bottom: 0.9375rem;
+    }
+    
+    .cr-header-title-nl {
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+    
+    .cr-header-desc-nl {
+        position: relative;
+        bottom: 0;
+    }
+    
+    .cr-hmenu {
+        text-align: left;
+    }
+    
+
+    .cr-header-nav li {
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+    
+
+}
+/* medium displays */
+@media only screen and (min-width: 40.063em) {
+    .small-no-right-pad {padding-right: 0.9375rem !important;}
+    .medium-no-right-pad {
+        padding-right: 0 !important;
+    }
+    
+    .medium-small-bottom-pad {
+        margin-bottom: 0 !important;
+    }
+
+    .medium-only-bottom-pad {margin-bottom: 0.9375rem !important;}
+    
+    .cr-header-title-nl {
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+    }
+
+    .cr-header-desc-nl {
+        position: relative;
+        bottom: 0;
+    }
+
+    .cr-hmenu {
+        text-align: right;
+    }
+    
+    .cr-header-nav li {
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+
+}
+/* large displays */
+@media only screen and (min-width: 64.063em) {
+    .medium-no-right-pad {margin-bottom: 0 !important;}
+    .small-no-right-pad {padding-right: 0.9375rem !important;}
+    .medium-small-bottom-pad {margin-bottom: 0 !important;}
+    .medium-only-bottom-pad {margin-bottom: 0 !important;}
+    
+    .cr-header-title-nl {
+        font-weight: normal;
+        font-size: 2rem;
+        line-height: 1.6rem;
+    }
+
+    .cr-header-desc-nl {
+        position: absolute;
+        bottom: -4px;
+    }
+
+    .cr-hmenu {
+        text-align: right;
+    }
+    
+    .cr-header-nav li {
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dppx) { 
+    
+    
+    .cr-default-logo-nt {
+        background: url(icons/default/default_logo_no_title_275x50_2x.png) no-repeat;
+        width: 275px;
+        height: 50px;
+        background-size: 275px 50px;
+        display: block;
+    }
+}

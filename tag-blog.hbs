@@ -1,0 +1,43 @@
+{{!< default}}
+
+<div class="cr-single-post-content cr-acontent" style="display: none"></div>
+<div class="cr-blogs cr-acontent" style="display: none">
+
+    <div class="large-12 medium-12 small-12 columns">
+        <div class="cr-load-post-page" style="display: none">
+            <img src="{{asset "css/icons/load/load.gif"}}" style="display: inline-block" id="cr-p-load-img"/>
+        </div>
+        <div class="cr-post-list">
+            {{#foreach posts}}
+
+            <article class="large-12 medium-12 small-12 columns {{post_class}} no-sp" id="post-{{id}}">
+                <div class="large-3 medium-4 small-12 columns no-sp">
+                    <header class="post-header">
+                        <div class="cr-head-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD / MMMM / YYYY"}}</time></div>
+                        <div class="cr-author">by {{author.name}}</div>
+                    </header>
+                </div>
+                <div class="large-9 medium-8 small-12 columns no-sp">
+                    <section class="large-12 medium-12 small-12 columns no-sp post-excerpt">
+                        <h3 class="post-title"><a href="{{url}}" class="cr-post-link">{{{title}}}</a></h3>
+                        {{content words="60"}}
+                    </section>
+                    <section class="large-12 medium-12 small-12 columns no-sp">
+                        <div class="cr-button-c">
+                            <div class="cr-bc">
+                                <div class="cr-lt"></div><div class="cr-lb"></div><div class="cr-rt"></div><div class="cr-rb"></div>
+                                <a href="{{url}}" class="cr-post-link">READ</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+            
+            {{/foreach}}
+            {{pagination}}
+            
+        </div>
+    </div>
+
+</div>
+    

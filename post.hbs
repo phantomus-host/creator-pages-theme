@@ -1,0 +1,39 @@
+{{!< default}}
+
+{{#post}}
+           
+<article class="large-12 medium-12 small-12 columns {{post_class}} cr-single-post" id="single-post-{{id}}"> 
+    
+    <article class="large-12 medium-12 small-12 columns {{post_class}} no-sp" id="post-{{id}}">
+        <div class="large-3 medium-4 small-12 columns no-sp">
+            <header class="post-header">
+                <div class="cr-head-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD / MMMM / YYYY"}}</time></div>
+                <div class="cr-author">by {{author.name}}</div>
+            </header>
+        </div>
+        <div class="large-9 medium-8 small-12 columns no-sp">
+            <h1 class="post-title">{{{title}}}</h1>
+            <section class="post-content">
+                {{content}}
+            </section>
+            
+            {{#if tags}}
+            <div class="post-meta">
+                <strong>tagged with: </strong>{{tags}}
+            </div>
+            {{/if}}
+        
+            <div class="cr-button-c-post">
+                <div class="cr-bc">
+                    <div class="cr-lt"></div><div class="cr-lb"></div><div class="cr-rt"></div><div class="cr-rb"></div>
+                    <a href="/blog" class="cr-back-button back-to-posts">BACK TO POSTS</a>
+                </div>
+            </div>
+            
+        </div>
+    </article>
+
+</article>
+
+{{/post}}
+

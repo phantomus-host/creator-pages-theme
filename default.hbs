@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/foundation.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    
+    <!--[if lte IE 9]>
+    <script type="text/javascript" src="{{asset "js/html5shiv.js"}}"></script>
+    <![endif]-->
+    
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+    
+    <script>
+    
+        {{! settings for google account (set to null if not available" }}
+        var gAccount = 'UA-49092555-6'; 
+        if (gAccount) {
+            var _gaq =[["_setAccount",gAccount],["_trackPageview"]];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+            g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+            s.parentNode.insertBefore(g,s)}(document,"script"));
+        }
+    
+    </script>
+    
+</head>
+<body class="{{body_class}}">
+
+    <div class="row header-row">
+        <div class="large-12 medium-12 small-12 columns">
+            {{> header}}
+        </div>
+    </div>
+    
+    <div class="row main-row">
+        <div class="cr-load-ind" style="display: none"><img src="{{asset "css/icons/load/load.gif"}}" /></div>
+        {{{body}}}
+    </div>
+    
+    <div class="row main-row cr-footer-content" style="display: none">
+        <div class="large-12 medium-12 small-12 columns">
+            <div class="large-12 medium-12 small-12 columns cr-footer no-sp">
+                <div class="large-6 medium-6 small-12 columns no-sp cr-fp">
+                    <section class="copyright">All content copyright {{@blog.title}} &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
+                    <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
+                </div>
+                <div class="large-6 medium-6 small-12 columns no-sp cr-fp cr-tr">
+                    <div class="cr-share">
+                        <a class="sicon-tw-cr" href="http://twitter.com/share?url="
+                            onclick="window.open(this.href + window.location.href, 'twitter-share', 'width=550,height=235');return false;"></a>
+                        <a class="sicon-f-cr" href="https://www.facebook.com/sharer/sharer.php?u="
+                            onclick="window.open(this.href + window.location.href, 'facebook-share','width=580,height=296');return false;"></a>
+                        <a class="sicon-g-cr" href="https://plus.google.com/share?url="
+                           onclick="window.open(this.href + window.location.href, 'google-plus-share', 'width=490,height=530');return false;"></a>
+                        <a class="sicon-rss-cr" href="{{@blog.url}}/rss/"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/jquery.history.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+    <img src="{{asset "css/icons/load/load.gif"}}" style="display: none" id="cr-p-load-img"/>
+     
+</body>
+</html>
