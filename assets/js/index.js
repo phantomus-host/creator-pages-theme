@@ -619,7 +619,7 @@ function backButtonForBlog() {
 function determinePath(p) {
     var path = p || window.location.pathname;
     if (path == '/' || path.indexOf('/portfolio') === 0) {
-        displayBlog();
+        displayPortfolio();
     } else if (portfolio[path]) {
         displayCategory(path, portfolio[path]);
     } else {
@@ -670,7 +670,7 @@ function lnkPushState(url) {
 
         var path = window.location.pathname;
         if (path == '/' || path.indexOf('/portfolio') === 0) {
-            displayPortfolio();
+            displayHome();
         } else if (path.indexOf('/blog') === 0 || path.indexOf('/tag') === 0) {;
             displayBlog();
         } else {
