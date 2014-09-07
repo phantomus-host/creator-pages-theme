@@ -670,7 +670,7 @@ function lnkPushState(url) {
 
         var path = window.location.pathname;
         if (path == '/' || path.indexOf('/portfolio') === 0) {
-            displayHome();
+            displayPortfolio();
         } else if (path.indexOf('/blog') === 0 || path.indexOf('/tag') === 0) {;
             displayBlog();
         } else {
